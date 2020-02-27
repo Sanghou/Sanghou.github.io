@@ -1,10 +1,16 @@
 ---
 layout: post
 title:  "블로그 만드는 중"
-date:   2019-03-23 21:03:36 +0530
+date:   2020-02-27 13:25 +0530
 categories: Javascript ReactJS Jekyll
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+
+뭔가 더 쉽게 만드는 방법이 있지 않을까
+매번 date를 수동으로 계산해줘야 하는건가?
+매번 default html에서 구축하니까
+어쩔 수 없이 글 작성 시간을 이렇게 적어두는건가
+
+시간 조작 하는 사람은 없겠지 :)
 
 ```javascript
 const Razorpay = require('razorpay');
