@@ -51,6 +51,9 @@ plainwhite:
 # Build settings
 theme: plainwhite
 
+gems:
+- jekyll-seo-tag
+
 plugins_dir:
-  - jekyll-seo-tag
+- jekyll-seo-tag
 #  - jekyll-feed
