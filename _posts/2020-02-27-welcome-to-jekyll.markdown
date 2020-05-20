@@ -21,12 +21,37 @@ Jekyll : 3.8.6
 
 3. .md 파일 작성하는 방법.  레포트 적을 때도 .md 파일은 평소에 작성하는 문서들이랑 포맷이 달라서 항상 헷갈렸다.  
 
+4. 블로그 배포시에 발생한 에러.  
+```
+The tag seo on line 8 in _includes/head.html is not a recognized Liquid tag.
+``` 
+분명 로컬에서는 문제없이 돌아갔는데 에러가 생기더라  
+기존  
+``` _config.yml ```   
+파일의
+```
+plugins_dir: 
+  - jekyll-seo-tag 
+``` 
+에서 
+```
+gems:
+- jekyll-seo-tag
+plugins_dir:
+ - jekyll-seo-tag 
+```
+로 변경해주었다.  
+ 다만 기존에 Gemfile 이라는 파일이 있는데 _config.yml에  gems를 추가해줘야 하는가에 대한 의문이 들었음.  
+ 나중에 시간 날 때 Gemfile과 _config를 찾아봐야할듯  (지금이 아침7시라 졸려서 다음 기회에 찾아봐야겠다.)
 
 <h2> 블로그 더 발전시키려면? </h2>
 1.  카테고리를 나누자
 
 2.  ~~매번 date를 수동으로 계산해줘야 하는건가?   뭔가 더 쉽게 만드는 방법이 있지 않을까?~~  
-=> 다른 사람들 gitblog 레포 가보니까 직접 입력하시는 듯 하다.
+~~=> 다른 사람들 gitblog 레포 가보니까 직접 입력하시는 듯 하다.~~
+=> 무조건적으로 설정을 저렇게 해야함.  
+https://jekyllrb.com/docs/posts/
+
 
 3.  게시글을 볼 때 제목만 링크가 걸림.  
 뭔가 블로그 본문을 눌렀을 때도 이동하는게 사용자 입장에서 좋을거 같다.  
