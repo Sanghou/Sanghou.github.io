@@ -1,10 +1,12 @@
 title: Hou
 author: Sanghou
 email: tkdgh97531@gmail.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description:
+  개인 블로그. 아직은 부족한 점이 많습니다.
+  #> # this means to ignore newlines until "show_exerpts:"
+  #Write an awesome description for your new site here. You can edit this
+  #line in _config.yml. It will appear in your document head meta (for
+  #Google search results) and in your feed.xml site description.
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -16,7 +18,7 @@ plainwhite:
   tagline: Developer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
-
+  disqus_shortname: games
   # generate social links in footer
   social_links:
     github:  Sanghou
@@ -49,6 +51,6 @@ plainwhite:
 # Build settings
 theme: plainwhite
 
-plugins:
+plugins_dir:
   - jekyll-seo-tag
 #  - jekyll-feed
